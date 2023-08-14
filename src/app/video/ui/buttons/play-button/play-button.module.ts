@@ -2,14 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PlayButtonComponent } from './play-button/play-button.component';
 
-
-
 @NgModule({
-  declarations: [
-    PlayButtonComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+  declarations: [PlayButtonComponent],
+  exports: [PlayButtonComponent],
+  imports: [CommonModule],
 })
-export class PlayButtonModule { }
+export class PlayButtonModule {}
