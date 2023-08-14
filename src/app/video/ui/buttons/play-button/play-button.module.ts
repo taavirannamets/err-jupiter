@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PlayButtonComponent } from './play-button/play-button.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    PlayButtonComponent
+  ],
   imports: [
     CommonModule
   ]
