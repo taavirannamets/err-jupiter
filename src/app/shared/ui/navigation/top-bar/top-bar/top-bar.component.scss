@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   gap: 0.2rem;
-  background-color: #1e293b;
+  background-color: var(--blue);
   color: var(--white);
   border: none;
   border-radius: 0.1rem;
@@ -40,5 +40,5 @@
 }
 
 .button:hover {
-  background-color: #334155;
+  background-color: var(--light-blue);
 }

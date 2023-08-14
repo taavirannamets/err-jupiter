@@ -89,15 +89,15 @@ video {
 }
 
 :root {
-  --primary: rgb(23, 37, 84);
-  --secondary: rgb(29, 78, 216);
-  --tertiary: rgb(239, 246, 255);
+  --blue: #2156a3;
+  --light-blue: #296ccc;
+  --dark-blue: #00255b;
 
-  --accent: rgb(251, 191, 36);
+  --black: #000;
+  --white: #fff;
 
-  --black: rgb(2, 6, 23);
-  --white: rgb(248, 250, 252);
-
+  --opacity-low: 0.75;
+  --opacity-medium: 0.5;
   --opacity-high: 0.25;
   --opacity-full: 0;
 }
@@ -110,7 +110,7 @@ video {
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
 html {
-  background-color: var(--primary);
+  background-color: var(--dark-blue);
   font-family: "Rubik", Roboto, sans-serif;
 }
 
