@@ -4,7 +4,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 
 @NgModule({
   declarations: [NavigationBarComponent],
-  exports: [NavigationBarComponent],
   imports: [CommonModule],
+  exports: [NavigationBarComponent],
 })
 export class NavigationBarModule {}
