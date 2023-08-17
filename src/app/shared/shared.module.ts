@@ -5,7 +5,7 @@ import {
   NavigationBarModule,
   FavoriteButtonModule,
   PlayButtonModule,
-  FooterModule,
+  DataSliderModule,
 } from '@ui';
 
 @NgModule({
@@ -16,7 +16,7 @@ import {
     NavigationBarModule,
     FavoriteButtonModule,
     PlayButtonModule,
-    FooterModule,
+    DataSliderModule,
   ],
 })
 export class SharedModule {}

@@ -1,0 +1,84 @@
+.container {
+  overflow: hidden;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.list-wrapper {
+  overflow: hidden;
+}
+
+.list-slide {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  list-style-type: none;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  transition: transform 1s ease-in-out;
+  padding: 1.25rem 0 1.25rem 0;
+  scrollbar-width: thin; // For Firefox
+  scrollbar-color: var(--dark-blue) var(--dark-blue); // For Firefox (track color, thumb color)
+}
+
+.list-slide::-webkit-scrollbar {
+  width: 1px; // For WebKit (Chrome, Safari, newer Edge)
+}
+
+.list-slide::-webkit-scrollbar-thumb {
+  background-color: var(--dark-blue); // For WebKit thumb color
+}
+
+.list-item {
+  position: relative;
+  padding: 0 2px;
+  transition: 250ms all;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.list-item img {
+  border-radius: 0.25rem;
+  height: 20rem;
+}
+
+.list-item:hover {
+  margin: 0 0.5rem;
+  scale: 1.05;
+}
+
+.list-item:hover img {
+  transition-delay: 50ms;
+  box-shadow: 0 0 0.5rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.arrow__btn {
+  position: absolute;
+  color: var(--white);
+  font-size: 6rem;
+  padding: 1.5rem;
+  padding-top: 6rem;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+  height: 20rem;
+  user-select: none;
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For older Firefox */
+}
+.left-arrow {
+  top: 0rem;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 200%);
+  margin-top: 3.05rem;
+  border-radius: 0 4rem 4rem 0;
+}
+.right-arrow {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 200%);
+  margin-top: 3.05rem;
+  border-radius: 4rem 0 0 4rem;
+}

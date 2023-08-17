@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+}
+
+.tab-container {
+  display: flex;
+}
+
+.tab {
+  padding: 1rem 1.25rem 1rem 1.25rem;
+  background-color: rgba(2, 6, 23, var(--opacity-high));
+  cursor: pointer;
+}
+
+.tab-link {
+  color: var(--white);
+  letter-spacing: 0.1rem;
+}
+
+.active {
+  background-color: rgba(2, 6, 23, var(--opacity-none));
+}
+
+.filler-container {
+  background-color: rgba(2, 6, 23, var(--opacity-high));
+
+  width: 100%;
+}

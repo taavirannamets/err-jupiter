@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LandingPageComponent } from './video/feature/landing-page/landing-page/landing-page.component';
+import { HomeComponent } from './video/feature/home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'video', pathMatch: 'full' },
-  { path: 'video', component: LandingPageComponent },
+  {
+    path: 'video',
+    component: HomeComponent,
+  },
 ];
 
 @NgModule({
