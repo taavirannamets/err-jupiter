@@ -1,13 +1,12 @@
-<section class="container" *ngIf="categoryData && categoryData.length > 0">
+<section class="container">
   <h2>{{ frontPageHeader }}</h2>
-
   <a class="arrow__btn left-arrow" (click)="scrollLeft()">‹</a>
   <div class="list-wrapper">
     <ul class="list-slide" #listSlider>
       <li class="list-item" *ngFor="let item of categoryData">
         <img
           [src]="item.verticalPhotos[0]?.photoUrlOriginal"
-          alt="{{ item.heading }}"
+          alt="{{ item.verticalPhotos[0]?.captionEt }}"
           id="{{ item.id }}"
         />
       </li>

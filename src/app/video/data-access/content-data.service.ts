@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { EMPTY, Observable, catchError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -12,6 +12,11 @@ export class ContentDataService {
   constructor(private http: HttpClient) {}
 
   getData(): Observable<any> {
-    return this.http.get(this.baseUrl);
+    return this.http.get(this.baseUrl).pipe(
+      catchError((error) => {
+        console.error('API request error:', error);
+        return EMPTY; // Or return a default value
+      })
+    );
   }
 }
