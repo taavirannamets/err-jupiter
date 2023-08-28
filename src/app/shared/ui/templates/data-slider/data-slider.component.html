@@ -6,7 +6,7 @@
     <ul class="list-slide" #listSlider>
       <li class="list-item" *ngFor="let item of categoryData">
         <img
-          [src]="item.verticalPhotos[0].photoUrlOriginal"
+          [src]="item.verticalPhotos[0]?.photoUrlOriginal"
           alt="{{ item.heading }}"
           id="{{ item.id }}"
         />
